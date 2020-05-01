@@ -538,8 +538,8 @@ public class ReadCodeFragment extends Fragment{
             show(displayBeanList);
 
             //最少步求解
-            String result = new Search().solution(cube.get2phaseStr(), 21, 100000000, 0, 0);
-            System.out.println(result);
+            // String result = new Search().solution(cube.get2phaseStr(), 21, 100000000, 0, 0);
+            // System.out.println(result);
 
             String coordinateStr = cube.handlCoordinate();
             coordinate_code.setText("坐标调整： "+coordinateStr);
