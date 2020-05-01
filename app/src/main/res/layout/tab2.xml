@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/grey"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/code_edit"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorOrange"
+        android:paddingLeft="5dp"
+        android:maxLines="2"
+        android:maxLength="110"
+        android:hint="请输入或粘贴打乱公式"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:text="清空"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/random_button"
+            android:text="随机"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/disrupt_button"
+            android:text="读码"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="0.1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:visibility="invisible"
+                style="@style/dirc_style">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/blue"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/dirc_style">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/up_corner_3"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/up_edge_0"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/up_corner_0"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/up_edge_3"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/up_edge_4"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/up_edge_1"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/up_corner_2"
+                        style="@style/paster_style"
+                        android:background="@color/blue"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/up_edge_2"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/up_corner_1"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="当前借位顺序"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/current_corder_sort"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/current_edge_sort"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="0.1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                style="@style/dirc_style"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/left_corner_3"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/left_edge_0"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/left_corner_0"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                       >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/left_edge_3"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/left_edge_4"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/left_edge_1"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/left_corner_2"
+                        style="@style/paster_style"
+                        android:background="@color/blue"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/left_edge_2"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/left_corner_1"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/dirc_style">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/front_corner_3"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/front_edge_0"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/front_corner_0"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/front_edge_3"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/front_edge_4"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/front_edge_1"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/front_corner_2"
+                        style="@style/paster_style"
+                        android:background="@color/blue"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/front_edge_2"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/front_corner_1"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/dirc_style">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/right_corner_3"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/right_edge_0"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/right_corner_0"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/right_edge_3"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/right_edge_4"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/right_edge_1"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/right_corner_2"
+                        style="@style/paster_style"
+                        android:background="@color/blue"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/right_edge_2"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/right_corner_1"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/dirc_style">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/back_corner_3"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/back_edge_0"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/back_corner_0"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/back_edge_3"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/back_edge_4"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/back_edge_1"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/back_corner_2"
+                        style="@style/paster_style"
+                        android:background="@color/blue"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/back_edge_2"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/back_corner_1"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="0.1dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:visibility="invisible"
+                style="@style/dirc_style">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/blue"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/dirc_style">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/down_corner_3"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/down_edge_0"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/down_corner_0"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/down_edge_3"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/down_edge_4"
+                        style="@style/paster_style"
+                        android:background="@color/green"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/down_edge_1"
+                        style="@style/paster_style"
+                        android:background="@color/white"
+                        >
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/down_corner_2"
+                        style="@style/paster_style"
+                        android:background="@color/blue"
+                       >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/down_edge_2"
+                        style="@style/paster_style"
+                        android:background="@color/orange"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/down_corner_1"
+                        style="@style/paster_style"
+                        android:background="@color/red"
+                        >
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_margin="1dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/current_coorniate"
+                    android:text=""
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/corner_buffer"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+                <TextView
+                    android:id="@+id/edge_buffer"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/remark"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/coordinate_code"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/corner_code"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/corner_code_fanse"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/edge_code"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/edge_code_fanse"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

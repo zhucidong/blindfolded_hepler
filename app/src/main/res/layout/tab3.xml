@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:background="@color/grey"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="练习模式"
+            style="@style/disrupt_text"
+            />
+        <Spinner
+            android:id="@+id/dl_ms"
+            android:layout_width="wrap_content"
+            style="@style/disrupt_edit"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/orange"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/corner_buffer"
+                android:text="角块"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                style="@style/disrupt_text"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="编码长度"
+                    style="@style/disrupt_text"
+                    />
+                <EditText
+                    android:id="@+id/corner_code_length"
+                    style="@style/disrupt_edit"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="翻色数量"
+                    style="@style/disrupt_text"
+                    />
+                <EditText
+                    android:id="@+id/corner_fanse_count"
+                    style="@style/disrupt_edit"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="小循环数"
+                    style="@style/disrupt_text"
+                    />
+                <EditText
+                    android:id="@+id/corner_xunhuan_count"
+                    style="@style/disrupt_edit"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="缓冲归位"
+                    style="@style/disrupt_text"
+                    />
+                <Spinner
+                    android:id="@+id/corner_is_homing"
+                    android:entries="@array/is_homing"
+                    style="@style/disrupt_edit"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/edge_buffer"
+                android:text="棱块"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                style="@style/disrupt_text"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="编码长度"
+                    style="@style/disrupt_text"
+                    />
+                <EditText
+                    android:id="@+id/edge_code_length"
+                    style="@style/disrupt_edit"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="翻色数量"
+                    style="@style/disrupt_text"
+                    />
+                <EditText
+                    android:id="@+id/edge_fanse_count"
+                    style="@style/disrupt_edit"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="小循环数"
+                    style="@style/disrupt_text"
+                    />
+                <EditText
+                    android:id="@+id/edge_xunhuan_count"
+                    style="@style/disrupt_edit"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="缓冲归位"
+                    style="@style/disrupt_text"
+                    />
+                <Spinner
+                    android:id="@+id/edge_is_homing"
+                    android:entries="@array/is_homing"
+                    style="@style/disrupt_edit"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/orange"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="奇偶校验"
+                style="@style/disrupt_text"
+                />
+            <Spinner
+                android:id="@+id/is_parity"
+                android:layout_weight="2"
+                android:entries="@array/is_parity"
+                style="@style/disrupt_edit"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/clear_button"
+            android:text="清空限制条件"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="打乱坐标"
+                style="@style/disrupt_text"
+                />
+            <Spinner
+                android:id="@+id/is_dl_zb"
+                android:entries="@array/is_zuobiao"
+                style="@style/disrupt_edit"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/disrupt_button"
+            android:text="生成打乱公式"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/orange"
+        android:layout_height="1dp"></LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/code_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:text="B2 F R2 U' B2 D R2 B2 U2 R2 F2 U R' B L' D R2 F2 L' D2 Rw2 Uw2"
+            />
+        <Button
+            android:id="@+id/copy_button"
+            android:text="复制打乱"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

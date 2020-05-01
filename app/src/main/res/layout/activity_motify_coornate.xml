@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:background="@android:drawable/title_bar"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改坐标"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="坐标描述"
+            android:textColor="@color/white"
+            style="@style/motify_text"/>
+        <Spinner
+            android:id="@+id/coordinate"
+            android:entries="@array/coordinate"
+            style="@style/motify_text"
+            ></Spinner>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_margin="10dp"
+        android:text="保存"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+</LinearLayout>

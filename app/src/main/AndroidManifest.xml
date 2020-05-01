@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="zd.cornermemory">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".ui.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.CornerFormulaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.RoatePicActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.LxPicActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.DuLActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".ui.EdgeFormulaActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.MotifyCodeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.MotifyBufferActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.MotifyCoornateActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.MotifyHelpActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.MotifySortActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.QueryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.AboutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

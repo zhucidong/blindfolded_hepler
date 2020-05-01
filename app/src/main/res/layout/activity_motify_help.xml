@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:background="@android:drawable/title_bar"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用说明"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="三盲助手APP：\n
+     大致分为三个模块 1. 角块记忆 2. 彳亍读码 3.打乱生成\n\n
+    “角块记忆” ：\n    由于国内目前的三盲主流的记忆方法为“记角读棱”，此模块也是针对于“记角”这块做的强化训练\n
+    先说说自己，由于我读棱及操作有点拖节奏，导致我做完棱块之后，完全忘记之前记忆的角块信息，所以想做一款APP可以强化自己的记忆能力\n
+    此记忆功能适应人群：\n
+    1.对三盲有极大的兴趣爱好\n
+    2.身边的环境不适合拧动魔方（午休，工作，上课等时间）\n
+    3.迫切的想强化练习角块记忆\n
+    操作指南：\n
+    先记忆随机生成的角块编码，待记忆完成之后，点击“填写答案” 这时候会出现一个弹框，需要你计算三道小数学题，待数学题答案正确之后，弹框消失，然后在屏幕下方输入之前记忆的角块编码，填写完成点击“检查答案”或者点击键盘上的“完成”，如果在填写的过程中忘记了某一个编码也可以点击检查答案看一眼，然后再输入。\n    做数学题的意义就是在模拟读棱及操作的过程，当你做完之后，看是否还记得之前的角块编码，这也是极大的在模拟真实的三盲还原过程。\n
+\n\n\n
+“彳亍读码”：\n
+        可以提前在设置界面设置好自己的坐标、缓冲、编码等信息（如无设置则默认标准的彳亍编码，“黄顶红前”，“UFR“，“UF“），然后进入读码界面
+        在打乱区输入打乱公式，或点击随机按钮随机生成打乱公式，或复制DCTimer等工具中的打乱（目前只支持标准版三阶盲拧的打乱公式格式，且打乱必须是自己坐标打乱，自己坐标还原），点击读码按钮，下面会显示出此打乱对应的三盲编码信息\n\n\n
+“打乱生成”：\n
+        提前在设置界面设置好自己的缓冲，然后进入打乱界面\n
+        输入框不填写则表示随机项，填写多个则根据填写的条件筛选出符合条件的打乱\n
+        翻色数量 计算方式为除去缓冲的数量，棱最多11个翻色，角最多7个翻色。如果角块输入2个翻色，有可能是2个角单独翻色，也有可能需要搭配缓冲块的三角翻，以此类推\n
+        小循环数 棱块最多5个小循环，角块最多3个小循环\n
+        例如只要想一个角块5组的打乱，则只需要填写角块编码长度10，其它不填写\n
+        只想要角2个循环，棱小循环随机，则只填写角小循环数2 ，其它不填写\n
+        只想要角3组，棱5组，角翻色1，棱翻色2 ，则填写角编码长度6 ，棱编码长度10，角翻色1，棱翻色2\n\n\n
+    欢迎推荐给身边有需要的魔友，希望这款APP对三盲魔友们有所帮助！\n
+    特别感谢 石欣 的 576图像素材，以及在我三盲学习过程中给过我很大帮助的 勺子、194、毛佬。\n\n
+    "/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

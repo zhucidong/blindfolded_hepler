@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:background="@android:drawable/title_bar"
+                  android:gravity="center"
+                  android:layout_width="match_parent"
+                  android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户设置"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/corner_tt"
+                android:layout_width="match_parent"
+                android:layout_margin="30dp"
+                android:text="修改坐标"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:background="@drawable/button_bg"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:id="@+id/l_tt"
+                android:layout_width="match_parent"
+                android:layout_margin="30dp"
+                android:text="修改缓冲"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:background="@drawable/button_bg"
+                android:layout_height="45dp"/>
+
+            <TextView
+                android:id="@+id/lx_tt"
+                android:layout_width="match_parent"
+                android:layout_margin="30dp"
+                android:text="修改编码"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:background="@drawable/button_bg"
+                android:layout_height="45dp"/>
+            <TextView
+                android:id="@+id/zl_tt"
+                android:layout_width="match_parent"
+                android:layout_margin="30dp"
+                android:text="借位顺序"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:background="@drawable/button_bg"
+                android:layout_height="45dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+    <!--<TextView-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:gravity="left"-->
+<!--android:textSize="14sp"-->
+<!--android:text="角块联想记忆训练APP：\n-->
+      <!--由于国内目前的三盲主流都是“UFR,UF”缓冲，记忆方法为“记角读棱”，此次做的这款APP也是针对于UFR缓冲“记角”这块做的强化训练（所有编码均为标准彳亍编码）\n-->
+      <!--先说说自己，由于我读棱及操作有点拖节奏，导致我做完棱块之后，完全忘记之前记忆的角块信息，所以想做一款APP可以强化自己的记忆能力\n-->
+    <!--此APP适应人群：\n-->
+ <!--1.对三盲有极大的兴趣爱好\n-->
+ <!--2.身边的环境不适合拧动魔方（例如，午休，工作，上课等时间）\n-->
+ <!--3.迫切的想强化练习角块记忆\n-->
+<!--操作指南：\n-->
+    <!--进入APP之后，先记忆随机生成的角块编码，待记忆完成之后，点击“填写答案” 这时候会出现一个弹框，需要你计算三道小数学题，待数学题答案正确之后，弹框消失，然后在屏幕下方输入之前记忆的角块编码，填写完成点击“检查答案”或者点击键盘上的“完成”，如果在填写的过程中忘记了某一个编码也可以点击检查答案看一眼，然后再输入。\n    做数学题的意义就是在模拟读棱及操作的过程，当你做完之后，看是否还记得之前的角块编码，这也是极大的在模拟真实的三盲还原过程。\n    其实这款APP还有很多待开发的功能，还有就是界面有点丑（很多图标素材都是网上随意搜索得来的），但是这并不影响正常的角块记忆训练。（APP大小为31MB, 虽然偏大，但是其中占空间的大多是图片素材）。希望这款APP对三盲魔友们有所帮助！\n-->
+<!--特别感谢 石欣 的 576图像素材，以及在我三盲学习过程中给过我很大帮助的 勺子、194、毛佬。\n\n-->
+    <!--&#45;&#45;&#45;&#45;&#45;&#45;来自魔方盲拧交流总群(QQ:492985538)的栋栋仔仔\n\n-->
+                                                        <!--2019年5月5日\n-->
+
+
+<!--"/>-->

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="corner_buffer">
+        <item>UBR</item>
+        <item>UFR</item>
+        <item>UFL</item>
+        <item>UBL</item>
+        <item>DFR</item>
+        <item>DBR</item>
+        <item>DBL</item>
+        <item>DFL</item>
+    </array>
+
+    <array name="is_homing">
+        <item>任意</item>
+        <item>归位</item>
+        <item>不归位</item>
+    </array>
+
+    <array name="is_parity">
+        <item>任意</item>
+        <item>有奇偶</item>
+        <item>无奇偶</item>
+    </array>
+
+    <array name="is_zuobiao">
+        <item>打乱坐标</item>
+        <item>不打乱坐标</item>
+    </array>
+
+    <array name="dlms">
+        <item>三盲练习模式</item>
+        <item>角块练习模式</item>
+        <item>棱块练习模式</item>
+        <item>神打练习模式</item>
+    </array>
+
+    <array name="edge_buffer">
+        <item>UB</item>
+        <item>UR</item>
+        <item>UF</item>
+        <item>UL</item>
+        <item>FR</item>
+        <item>FL</item>
+        <item>BL</item>
+        <item>BR</item>
+        <item>DF</item>
+        <item>DL</item>
+        <item>DB</item>
+        <item>DR</item>
+    </array>
+
+
+    <array name="bm">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>O</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </array>
+
+    <array name="coordinate">
+        <item>黄顶蓝前</item>
+        <item>黄顶绿前</item>
+        <item>黄顶红前</item>
+        <item>黄顶橙前</item>
+
+        <item>白顶蓝前</item>
+        <item>白顶绿前</item>
+        <item>白顶红前</item>
+        <item>白顶橙前</item>
+
+        <item>蓝顶红前</item>
+        <item>蓝顶橙前</item>
+        <item>蓝顶黄前</item>
+        <item>蓝顶白前</item>
+
+        <item>绿顶黄前</item>
+        <item>绿顶白前</item>
+        <item>绿顶红前</item>
+        <item>绿顶橙前</item>
+
+        <item>红顶黄前</item>
+        <item>红顶白前</item>
+        <item>红顶蓝前</item>
+        <item>红顶绿前</item>
+
+        <item>橙顶黄前</item>
+        <item>橙顶白前</item>
+        <item>橙顶蓝前</item>
+        <item>橙顶绿前</item>
+    </array>
+</resources>

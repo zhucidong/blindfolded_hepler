@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:background="#FFFFFF"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/code_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/three_five_radio"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="2-4组"
+                    android:checked="true"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/three_radio"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="3组"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/four_radio"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:layout_width="match_parent"
+                    android:text="4组"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/five_radio"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/black"
+                    android:layout_width="match_parent"
+                    android:text="5组"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请记忆以下编码,记忆完成后点击 ‘填写答案’"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/code_text"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联想词(仅供参考):"
+                android:padding="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <RadioGroup
+                android:id="@+id/lx_radio_group"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/open_radio"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="开启联想词"
+                    android:checked="true"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/close_radio"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:text="关闭联想词"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:id="@+id/ans_layout"
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:visibility="invisible"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="请在下方输入之前记忆的编码(输入结束点击‘检查答案’或键盘上的‘完成’)"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ans"
+        android:imeOptions="actionDone"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:inputType="textUri|textMultiLine"
+        android:textColor="@color/black"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oper_layout"
+        android:layout_width="match_parent"
+        android:layout_above="@id/ans_layout"
+        android:layout_height="60dp">
+        <Button
+            android:id="@+id/input"
+            android:layout_weight="1"
+            android:text="填写答案"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/start_button"
+            android:layout_weight="1"
+            android:text="生成编码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/check"
+            android:layout_weight="1"
+            android:text="检查答案"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_above="@id/oper_layout"
+        android:layout_below="@id/code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
