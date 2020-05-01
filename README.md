@@ -1,1 +1,1 @@
-# blindfolded_hepler
+# 如果只想使用apk文件的话，只需要单独下载“三盲用手3.2.apk” 就完事了
